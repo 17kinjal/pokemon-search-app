@@ -20,7 +20,6 @@ const Search: React.FC<SearchProps> = ({ searchQuery, setSearchQuery }) => {
 					alt="Search icon"
 					width={24}
 					height={24}
-					priority
 				/>
 				<Input
 					type="text"

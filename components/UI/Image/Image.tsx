@@ -12,9 +12,9 @@ const ResponsiveImage: FC<Props> = ({ src, alt = '', imageBpWidths, className })
 	return (
 		<div className={`relative w-full rounded-t-md bg-white text-center ${className || ''}`}>
 			<Image
-				src={src || 'https://img.pokemondb.net/artwork/large/bulbasaur.jpg'}
+				src={src}
 				alt={alt}
-				loading="lazy"
+				priority
 				fill
 				sizes={imageBpWidths.join(', ')}
 				className="object-contain bg-transparent p-4"
